@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guthi Chandana — Full Stack Developer (Fresher)</title>
+  <meta name="description" content="Guthi Chandana — Entry-Level Full Stack Developer. Skills: JavaScript, Python, SQL, HTML, CSS. Projects, education, certifications and contact." />
+  <meta name="author" content="Guthi Chandana" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+
+  <!-- Navbar -->
+  <header>
+    <div class="container nav">
+      <div class="brand">Chandana<span style="opacity:.6">.dev</span></div>
+      <nav id="menu" class="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certs">Certifications</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="flex">
+        <button id="themeToggle" class="btn ghost" title="Switch theme"><i class="fa-solid fa-swatchbook"></i></button>
+        <button id="hamburger" class="hamburger"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+ <section id="home" class="hero reveal">
+  <div class="hero-text">
+    <div class="tag"><i class="fa-solid fa-code"></i> Entry-Level Full Stack Developer</div>
+    <h1>Hi, I'm <span style="color:var(--accent)">Guthi Chandana</span>.<br /></h1>
+    <p>SQL · Python · HTML · CSS · JavaScript</p>
+   <div class="flex">
+  
+  <button class="btn ghost" onclick="openResume()">
+    <i class="fa-solid fa-eye"></i>&nbsp; View Resume
+  </button>
+</div>
+
+<!-- Resume Modal -->
+<div id="resumeModal" class="modal" onclick="closeResume()">
+  <span class="close-btn">&times;</span>
+  <embed src="CHANDANA_GUTHI_RESUME.pdf" type="application/pdf" width="80%" height="90%" />
+</div>
+
+    <div class="flex" style="margin-top:14px; opacity:.9">
+      <a href="mailto:chandanaguthi@gmail.com" class="chip"><i class="fa-regular fa-envelope"></i> chandanaguthi@gmail.com</a>
+      <span class="chip"><i class="fa-solid fa-phone"></i> +91 9032436826</span>
+      <a href="https://www.linkedin.com/in/chandana-guthi-725835336/" target="_blank" class="chip"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </div>
+  <div class="hero-img fade-in">
+    <img src="images/profile.jpg" alt="Guthi Chandana" />
+  </div>
+</section>
+
+
+    <!-- About -->
+    <section id="about" class="reveal">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+            As a passionate and motivated aspiring Software Developer, I am excited to express my interest in contributing to your esteemed organization. I am currently pursuing my B.Tech in Electrical and Electronics Engineering with Minor Computer Science Engineering (2022–2026) with a strong foundation in HTML, CSS, JavaScript, Python, SQL, and modern tools like Visual Studio Code and Jupyter Notebook.
+
+Throughout my academic journey and certified training programs, I have gained hands-on experience in full-stack development. One of my notable projects includes developing an IoT-based Object Detection System using Arduino and cloud connectivity, which demonstrates my ability to blend hardware interaction with software applications. In addition, I’ve completed certifications in Python Full Stack and Internet of Things, further solidifying my technical capabilities.
+
+My strong communication skills, adaptability, and commitment to collaborative teamwork allow me to thrive in dynamic environments. I am eager to learn, contribute, and grow while applying my knowledge to real-world development projects.
+
+Please find my resume attached for your reference. I look forward to the opportunity to discuss how my skills and enthusiasm can benefit your team.
+
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="reveal">
+      <h2>Skills</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Programming</h3>
+          <div class="grid">
+            <div class="skill"><i class="fa-brands fa-html5"></i> HTML</div>
+            <div class="skill"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+            <div class="skill"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="skill"><i class="fa-brands fa-python"></i> Python</div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Databases</h3>
+          <div class="grid">
+            <div class="skill"><i class="fa-solid fa-database"></i> MySQL</div>
+            <div class="skill"><i class="fa-solid fa-database"></i> NoSQL</div>
+            <div class="skill"><i class="fa-solid fa-database"></i> MongoDB</div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Tools & Soft Skills</h3>
+          <div class="grid">
+            <div class="skill"><i class="fa-solid fa-screwdriver-wrench"></i> VS Code</div>
+            <div class="skill"><i class="fa-solid fa-book"></i> Jupyter Notebook</div>
+            <div class="skill"><i class="fa-regular fa-file-excel"></i> MS Excel</div>
+            <div class="skill"><i class="fa-solid fa-comments"></i> Communication</div>
+            <div class="skill"><i class="fa-solid fa-handshake-angle"></i> Team Collaboration</div>
+            <div class="skill"><i class="fa-regular fa-calendar-check"></i> Work Ethic & Adaptability</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="reveal">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card project">
+          <div class="flex" style="justify-content:space-between; align-items:center">
+            <h3>Object Detection by Arduino using IoT</h3>
+            <div class="tags">
+              <span class="chip">Arduino UNO</span>
+              <span class="chip">IR/Ultrasonic</span>
+              <span class="chip">ESP8266</span>
+              <span class="chip">IoT Cloud</span>
+            </div>
+          </div>
+          <p>Built an object detection system using IR & ultrasonic sensors connected to Arduino/ESP8266. The system detects objects within a threshold distance and transmits status to the cloud/mobile app, triggering notifications or actions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="reveal">
+      <h2>Education</h2>
+      <div class="card timeline">
+        <div class="item">
+          <div class="title">B.Tech in Electrical & Electronics Engineering — St. Ann’s College of Engineering & Technology, Chirala</div>
+          <div class="meta">2022 – 2026 · CGPA: 8.41</div>
+        </div>
+        <div class="item">
+          <div class="title">Intermediate (MPC) — Sri Gowthami Jr. College</div>
+          <div class="meta">2020 – 2022 · 66%</div>
+        </div>
+        <div class="item">
+          <div class="title">Secondary Education (SSC) — Z.P.H. School</div>
+          <div class="meta">2020 · Marks: 588</div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="certs" class="reveal">
+  <h2>Certifications</h2>
+  <div class="grid grid-2">
+    <div class="card">
+      <img src="certificates/solar_pv.jpg" alt="Solar PV Plant Design" class="cert-thumb" onclick="openCert(this)" />
+      <p>Solar PV Plant Design — SkillDzire (May–Jun 2025)</p>
+    </div>
+    <div class="card">
+      <img src="certificates/python_full_stack.jpg" alt="Python Full Stack" class="cert-thumb" onclick="openCert(this)" />
+      <p>Python Full Stack — CDST Informatics (Jul 2024)</p>
+    </div>
+    <div class="card">
+      <img src="certificates/iot_certificate.jpg" alt="IoT Certificate" class="cert-thumb" onclick="openCert(this)" />
+      <p>Introduction to Internet of Things — NPTEL (Jul–Oct 2024)</p>
+    </div>
+    <div class="card">
+      <img src="certificates/c_programming.jpg" alt="C Programming" class="cert-thumb" onclick="openCert(this)" />
+      <p>Problem Solving Through Programming in C — NPTEL (Jul–Oct 2023)</p>
+    </div>
+  </div>
+</section>
+
+<!-- Fullscreen Image Modal -->
+<div id="certModal" class="modal" onclick="closeCert()">
+  <span class="close-btn">&times;</span>
+  <img class="modal-content" id="certFull">
+  <div id="certCaption"></div>
+</div>
+
+
+<!-- Fullscreen Image Modal -->
+<div id="certModal" class="modal" onclick="closeCert()">
+  <span class="close-btn">&times;</span>
+  <img class="modal-content" id="certFull">
+  <div id="certCaption"></div>
+</div>
+
+
+    <!-- Contact -->
+    <section id="contact" class="reveal">
+      <h2>Contact</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <form action="mailto:chandanaguthi@gmail.com" method="post" enctype="text/plain">
+            <label>Name</label>
+            <input name="name" required />
+            <label>Email</label>
+            <input type="email" name="email" required />
+            <label>Message</label>
+            <textarea name="message"></textarea>
+            <button class="btn" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Guthi Chandana · Built with ❤️</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
